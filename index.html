@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Child Parent Relationship</title>
+    <style>
+        #p {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+
+        #c1 {
+            width: 250px;
+            height: 250px;
+            background-color: aquamarine;
+        }
+
+        #c2 {
+            width: 250px;
+            height: 250px;
+            background-color: blueviolet;
+        }
+
+    /* Desendent selector 
+      
+       parent child{
+       
+       property:value;
+
+       }
+    */
+        #p:hover #c1 {
+            background-color: blue;
+            border-radius:250px;
+        }
+
+        #p:hover #c2 {
+            background-color:cadetblue;
+            border-radius:250px;
+        }
+
+        #cc1{
+            width:100px;
+            height: 100px;
+            background-color:blue;
+        }
+
+        #p:hover #cc1{
+            background-color: antiquewhite;
+            border-radius: 100px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="p">
+        <div id="c1">
+            <div id="cc1"></div>
+        </div>
+        <div id="c2"></div>
+    </div>
 </body>
 </html>
